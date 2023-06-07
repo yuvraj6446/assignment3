@@ -18,7 +18,7 @@ const Card = ({setsummaryData,cardData}) => {
 
       {/* img */}
 
-{console.log(cardData?.show?.image?.original)}
+
 <div className='w-[100%] flex justify-center items-center'>
 <img alt='I' className=' w-[100%] rounded-[5px] max-h-[340px]' src={cardData?.show?.image?.original} />
 

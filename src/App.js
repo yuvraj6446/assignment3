@@ -27,7 +27,7 @@ function App() {
        }
        catch(error){
 
-           console.error("error is in fetch data");
+          //  console.error("error is in fetch data");
        }
        
          
@@ -37,13 +37,16 @@ function App() {
    useEffect(()=>
    {
         
+       if(data.length==0)
+       {
+        fetchData();
+       }
        
-       fetchData();
-        console.log(data);
+        // console.log(data);
         
 
 
-   },[2]);
+   },[data]);
 
 
 
