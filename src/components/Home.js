@@ -3,11 +3,13 @@ import { herobg } from './data';
 import Cards from "./Cards";
 import Summary from "./Summary"
 import Card from './Card';
-import {BrowserRouter , Route, Routes } from 'react-router-dom';
+import {BrowserRouter , Outlet, Route, Routes } from 'react-router-dom';
 
-const Home = ({data}) => {
+const Home = ({data,setsummaryData}) => {
 
-    const [summaryData,setsummaryData]=useState([]);
+  
+
+    
   return (
     <div className='relative '>
 
@@ -24,24 +26,24 @@ const Home = ({data}) => {
 {/* next */}
 <div className=' absolute top-[50px]  z-10' >
 
-    <Routes>
-<Route path="/"  element={<div className='top-[70px]'><Cards setsummaryData={setsummaryData} data={data} /></div>} />
-
-
-<Route path='/summary'  element={<div className='w-full  ' ><Summary  summaryData={summaryData}  /></div>}/>
+   <Cards setsummaryData={setsummaryData} data={data} />
 
 
 
-    </Routes>
+
+
      
     </div>
   
     
    
 
-
     </div>
   )
 }
 
-export default Home
+
+
+
+
+export default Home;

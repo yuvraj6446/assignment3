@@ -1,9 +1,35 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Form from './Form';
+import { herobg } from './data';
 const Summary = ({summaryData}) => {
+
+    
+
+    // 
     const [isformOpen,setisformopen]=useState(false);
   return (
+// 
+
+<div className='relative '>
+
+<div id='bgimg' className='fixed'>
+<img alt='Not found'  src={herobg} className='w-[100vw] h-[100vh]' />
+
+</div>
+{/* next */}
+<div id='bg'  className='fixed  bg-black w-[100vw] h-[100vh] opacity-80 z-10'>
+
+ </div>
+
+
+{/* next */}
+<div className=' absolute top-[50px]  z-10' >
+
+{/* <Cards setsummaryData={setsummaryData} data={data} /> */}
+
+
+
     <div className='  relative h-[91vh]  items-center w-[100vw]   flex justify-center text-white' >
 
 {/* bg */}
@@ -130,6 +156,17 @@ const Summary = ({summaryData}) => {
 
 </div>}
     </div>
+
+
+ 
+</div>
+
+
+
+
+</div>
+
+
   )
 }
 

@@ -4,7 +4,7 @@ import Summary from "./components/Summary";
 import Navbar from "./components/Navbar";
 import Spinner from './components/Spinner'
 import Home from "./components/Home";
-import { BrowserRouter ,Routes} from 'react-router-dom';
+import { BrowserRouter ,Route,Routes} from 'react-router-dom';
 import Cards from './components/Cards';
 function App() {
 
@@ -53,28 +53,34 @@ function App() {
    },[data]);
 
 
-
+   const [summaryData,setsummaryData]=useState([]);
 
   return (
 
-    <BrowserRouter className="App">
-{    console.log("great")
-}    {
+    <div className="App">
+   {
 
       isloading?<div className='w-[100vw] h-[100vh] flex justify-center items-center'><Spinner/></div>:<div>
        
        
           <Navbar/>
 
+
+<Routes>
+
+  <Route path='/' element={<Home data={data} setsummaryData={setsummaryData}/>} />
+  <Route path='/summary' element={<Summary  summaryData={summaryData}  />}/>
+</Routes>
          
+     
       
         
-      <Home data={data}/>
+      
     </div>
     }
     
   
-    </BrowserRouter>
+    </div>
   );
 }
 
