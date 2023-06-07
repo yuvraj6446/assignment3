@@ -39,7 +39,7 @@ function App() {
    useEffect(()=>
    {
         
-       if(data.length==0)
+       if(data.length===0)
        {
         fetchData();
        }

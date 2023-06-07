@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { HashLoader } from 'react-spinners';
-import ClipLoader from "react-spinners/ClipLoader";
 
 
 

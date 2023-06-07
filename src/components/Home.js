@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { herobg } from './data';
 import Cards from "./Cards";
 // import Summary from "./Summary"
