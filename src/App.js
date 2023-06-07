@@ -9,7 +9,7 @@ function App() {
   const [data,setData] = useState([]);
 
 
-  const [isloading,setisLoading]=useState(true);
+  const [isloading,setisLoading]=useState(false);
    async  function  fetchData()
    { 
      
@@ -41,8 +41,10 @@ function App() {
        {
         fetchData();
        }
+        
+     
        
-        // console.log(data);
+        console.log(data);
         
 
 
@@ -54,7 +56,9 @@ function App() {
   return (
 
     <div className="App">
-    {
+{    console.log("great")
+}    {
+
       isloading?<div className='w-[100vw] h-[100vh] flex justify-center items-center'><Spinner/></div>:<div>
         <Navbar/>
       <Home data={data}/>
