@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { herobg } from './data';
 import Cards from "./Cards";
-import Summary from "./Summary"
-import Card from './Card';
-import {BrowserRouter , Outlet, Route, Routes } from 'react-router-dom';
+// import Summary from "./Summary"
+// import Card from './Card';
+// import {BrowserRouter , Outlet, Route, Routes } from 'react-router-dom';
 
 const Home = ({data,setsummaryData}) => {
 

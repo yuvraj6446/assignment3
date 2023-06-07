@@ -4,8 +4,8 @@ import Summary from "./components/Summary";
 import Navbar from "./components/Navbar";
 import Spinner from './components/Spinner'
 import Home from "./components/Home";
-import { BrowserRouter ,Route,Routes} from 'react-router-dom';
-import Cards from './components/Cards';
+import {Route,Routes} from 'react-router-dom';
+// import Cards from './components/Cards';
 function App() {
 
   const [data,setData] = useState([]);

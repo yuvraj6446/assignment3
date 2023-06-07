@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from "./Card"
-const Cards = ({data,setsummaryData,handleCardClick}) => {
+const Cards = ({data,setsummaryData}) => {
     
   return (
     <div className='flex flex-wrap justify-center items-center gap-[3%] '>
