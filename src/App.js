@@ -4,7 +4,7 @@ import Summary from "./components/Summary";
 import Navbar from "./components/Navbar";
 import Spinner from './components/Spinner'
 import Home from "./components/Home";
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter ,Routes} from 'react-router-dom';
 import Cards from './components/Cards';
 function App() {
 
@@ -66,10 +66,7 @@ function App() {
        
           <Navbar/>
 
-          <div className='absolute top-[100px] z-50' >
-            fghjkjhvbmnbvbnnbvbnbbnbnnbnnsmjkdkncksnknsaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-            assssssss
-          </div>
+         
       
         
       <Home data={data}/>
