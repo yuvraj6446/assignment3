@@ -13,7 +13,7 @@ const Card = ({setsummaryData,cardData}) => {
 
 
   return (
-    <div className='flex mt-[25px] bg-black bg-opacity-[50%] rounded-[5px] w-[250px] hover:scale-105 duration-100 pb-4  flex-col ' >
+    <div className='flex justify-center  mt-[25px] bg-black bg-opacity-[50%] rounded-[5px] w-[250px] hover:scale-105 duration-100 pb-4  flex-col ' >
       
 
       {/* img */}
@@ -28,14 +28,14 @@ const Card = ({setsummaryData,cardData}) => {
      {/* name */}
 
   
-        <p className='font-bold text-yellow-400 '>
+        <p className='font-bold justify-center flex text-yellow-400 '>
             {cardData?.show?.name}
         </p>
      
 
      {/* rating , language,  */}
-     <div className='flex justify-center items-center flex-col'>
-        <p className='text-white'>
+     <div className='flex justify-center items-center px-2 flex-col'>
+        <p className='text-white '>
             Rating : <span className='text-green-400'>{cardData?.show?.rating?.average}</span>
         </p>
 
@@ -46,10 +46,10 @@ const Card = ({setsummaryData,cardData}) => {
 
 
      {/* summary */}
-     <div className='text-white'>
+     <div className='text-white px-2' >
         <div>
             {
-                showless?(<div>
+                showless?(<div >
                   {
                     cardData?.show?.summary.substr(0,80)
                   }
