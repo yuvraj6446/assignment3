@@ -65,6 +65,7 @@ function App() {
        
           <Navbar/>
 
+<Home data={data} setsummaryData={setsummaryData}/>
 
 <Routes>
 
